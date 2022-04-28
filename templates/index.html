@@ -1,11 +1,11 @@
 {% extends "base.html" %}
-{% block content %} 
-{{ form.csrf_token() }}
-<form method="post">   
-<p>{{form.number_one.label}}</p>
-<p>{{form.number_one}}</p>
-<p>{{form.number_two.label}}</p>
-<p>{{form.number_two}}</p>
-<p>{{form.button}}</p>
-</form>
+    {% block content %} 
+    <form method="post">   
+        {{ form.csrf_token() }}
+        <p>{{form.number_one.label}}</p>
+        <p>{{form.number_one}}</p>
+        <p>{{form.number_two.label}}</p>
+        <p>{{form.number_two}}</p>
+        <p>{{form.button}}</p>
+    </form>
 {% endblock %}
